@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Jasmine Avakova Portfolio</title>
+</head>
+<body>
+    <div class="all-page">
+        <!--MENU GAUCHE-->
+        <nav class="nav-left">
+            <ul class="nav-left-ul">
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('profil')">Profil</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('parcours')">Parcours</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('experience')">Expériences</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('projet')">Projets</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('certificat')">Certifications</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('veille')">Veille technologique</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('poursuite')">CV et lettre de motivation</a></li>
+            </ul>
+        </nav>
+        <!--PAGE A DROITE-->
+        <div class="page-main">
+            <!--PAGE 1-->
+            <div class="profil-informations" id="profilContent">
+                <p class="profil-name">Jasmine Avakova</p>
+                <p class="profil-presentation">Etudiante en deuxieme année de <strong>BTS¹ SIO²</strong>  option <strong>SLAM³</strong> au lycée Parc de Vilgénis à Massy.</p>
+                <p class="profil-presentation">Vous y trouverez l'intégralité de mon parcours scolaire. Ainsi que mes réalisations personnelles et académiques. Et mon expérience dans le domaine informatique.</p>
+                <p class="profil-informa-liens">Vous trouverez ci-joint des liens pour accéder à mon profil LinkdIn et à mon GitHub :</p>
+                <div class="logo-img">
+                    <a href="https://fr.linkedin.com/in/jasmine-avakova-647a5923a"><img src="img/logo-linkdin.png" class="logo-img-link"></a>
+                    <a href="https://github.com/jimistay"><img src="img/logo-github.png" class="logo-img-git"></a>
+                </div>
+                <div class="profil-remerciments">
+                    <p class="profil-remerciments-p"><i>Bonne lecture,</i></p>
+                    <p class="profil-remerciments-p"><i>Jasmine</i></p>
+                </div>
+                <div class="detail-informations">
+                    <p class="detail-informations-p">1 : Brevet de Technicien supérieur</p>
+                    <p class="detail-informations-p">2 : Systèmes Informatiques aux Organisations</p>
+                    <p class="detail-informations-p">3 : Solutions Logicielles et Applcations Métiers</p>
+                </div>
+            </div>
+            <!--PAGE 2-->
+            <div class="parcours" id="parcoursContent">
+                <p class="title parcours-info-titre">Parcours scolaire :</p>
+                <div class="parcours-info">
+                    <img class="parcours-img" src="img/parcours.png">
+                </div>
+            </div>
+            <!--PAGE 3-->
+           <div class="experience" id="experienceContent">
+            <div class="experience-all">
+                <p class="title experience-p-title">Mes experiences :</p>
+                <div class="experice-first">
+                    <div class="experience-first-block">
+                        <div class="experience-pre-stage-info-gauche">
+                            <p class="experience-p-title-a">Développeur d'applications chez Supplay</p>
+                            <p class="experience-p">Stage : 6 semaines (Mai-juillet 2023)</p>
+                            <p class="experience-p">Développement API (PHP Symfony)</p>
+                        </div>
+                        <div class="experience-logo-1">
+                            <img class="supplay" src="img_stage1/supplay-logo.png">
+                        </div>
+                    </div>
+                    <div class="experience-second-block">
+                        <p class="experience-p-supplay">Supplay est une entreprise spécialisée dans le <strong>service de recrutement</strong> intérim dans un grand nombre de secteurs d'activité : btp, industrie, tertiaire, cadre ou cadre commercial.</p>
+                        <p class="experience-p-supplay">Elle compte <strong>184 agences</strong>  en France et l'objectif de l'équipe de developpement est d'automatiser les tâches.</p>
+                        <div>
+                            <img class="first-stage-chiffre1" src="img_stage1/chiffres1.png">
+                            <img class="first-stage-chiffre2" src="img_stage1/chiffre2.png">
+                        </div>
+                        <p class="experience-p">Durant ce stage, j'ai participé à la création d'API avec PHP Symfonie, en effectuant diverses missions.</p>
+                    </div>
+                    <p class="experience-p">Voici quelques exemples:</p>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Création des routes en : POST, GET, PUT DELETE et retour en JSON</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <img src="img_stage1/ticket-img.png" class="img-ticket hidden">
+                        <img src="img_stage1/get-post.png" class="img-get-post hidden">
+                        <img src="img_stage1/vue-get.png" class="img-vue-get hidden">
+                        <img src="img_stage1/retour-vue.png" class="img-retour-vue hidden">
+                        <img src="img_stage1/get-code.png" class="img-get-code hidden">                 
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Création de collection Postman</p>
+                        <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <img src="img_stage1/postman.png" class="img-postman hidden">
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Réalisation des tests unitaires</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <img src="img_stage1/test-uni-ex.png" class="img-test-uni-ex hidden">
+                        <img src="img_stage1/test-realised.png" class="img-test-realised hidden"> 
+                    </div>
+                </div>
+            </div>
+            <div class="second-stage-exp">
+                <div class="experience-first-block">
+                    <div class="experience-pre-stage-info-gauche">
+                        <p class="experience-p-title-a">Développer Full Stack chez Retrokube</p>
+                        <p class="experience-p">Second stage : 6 semaines</p>
+                        <p class="experience-p">Décembre-Janvier 2023-2024</p>
+                    </div>
+                    <div>
+                        <img src="img_stage2/retrokube-logo.png" class="retrokube-img">
+                    </div> 
+                </div>
+                <div class="experience-second-block">
+                    <p class="experience-p-supplay">Retrokube est une entreprise qui réalise du <strong>graphisme, des applications web, des applications mobiles, des expériences VR, des stratégie marketing</strong>.</p>
+                    <p class="experience-p-supplay">L'entreprise est composée de <strong>4 personnes</strong>  (le fondateur, une graphiste UX UI, un développeur Full Stack et une développeuse Web).</p>
+                    <div>
+                        <img class="second-stage-chiffre1" src="img_stage2/chiffre2.png" alt="">
+                        <img class="second-stage-chiffre2" src="img_stage2/chiffre1.png" alt="">
+                    </div>
+                    <div>
+                        <p class="experience-p exemple">Voici quelques exemples des missions:</p>
+                        <p class="experience-p">Développement d'un site internet en PHP Laravel 8.2</p>
+                        <div class="img-first-stage">
+                            <div class="block-mission">
+                                <p class="experience-p">Développement des pages à partir d'une maquette (Adobe Xd).</p>
+                                <button onclick="toggleImagesVisibility(this)">Détails</button>
+                            </div>
+                            <img src="img_stage2/maquette-all.png" class="maquette-all hidden">
+                        </div>
+                        <div class="img-first-stage">
+                            <div class="block-mission">
+                                <p class="experience-p">Stylisation en scss des pages de manière responsive (mobile, tablette, ordinateur : de 300px à 2736px).</p>
+                                <button onclick="toggleImagesVisibility(this)">Détails</button>
+                            </div>
+                            <img src="img_stage2/ex-css.png" class="ex-css hidden">
+                        </div>
+                        <div class="img-first-stage">
+                            <div class="block-mission">
+                                <p class="experience-p">Développement des routes pour le front et le Backoffice.</p>
+                                <button onclick="toggleImagesVisibility(this)">Détails</button>
+                            </div>
+                            <img src="img_stage2/routes.png" class="routes hidden">
+                        </div>
+                        <div class="img-first-stage">
+                            <div class="block-mission">
+                                <p class="experience-p">Développement des Controllers.</p>
+                                <button onclick="toggleImagesVisibility(this)">Détails</button>
+                            </div>
+                            <img src="img_stage2/controller.png" class="controller hidden">
+                            <img src="img_stage2/ex-controller.png" class="ex-controller hidden">
+                        </div>
+                        <div class="img-first-stage">
+                            <div class="block-mission">
+                                <p class="experience-p">Création des migrations pour adapter la base de données aux changements.</p>
+                                <button onclick="toggleImagesVisibility(this)">Détails</button>
+                            </div>
+                            <img src="img_stage2/migrate.png" class="migrate hidden">
+                            <img src="img_stage2/table-update.png" class="table-update hidden">
+                            <img src="img_stage2/model.png" class="model hidden">
+                        </div>
+                    </div>
+                    <div class="img-first-stage">
+                        <div class="block-mission">
+                            <p class="experience-p">Intégration de la traduction pour un site internet en React à l'aide des variables JSON (i18n).</p>
+                            <button onclick="toggleImagesVisibility(this)">Détails</button>
+                        </div>
+                        <img src="img_stage2/trad1.png" class="trad1 hidden">
+                        <img src="img_stage2/trad4.png" class="trad4 hidden">
+                        <img src="img_stage2/trad2.png" class="trad2 hidden">
+                        <img src="img_stage2/trad3.png" class="trad3 hidden">
+                    </div>
+                    <div>
+                        <p class="experience-p last-p-experience">Création et stylisation des motifs en DRUPAL en scss.</p>
+                    </div>
+                </div>
+            </div>
+            <!--PAGE 4-->
+            <div class="projet" id="projetContent">
+                <p class="title projet-p-title">Projets :</p>
+                <div class="projet-all">
+                    <div class="projet-facture projet-view">
+                        <p class="p-facture-title">Facture</p>
+                        <p class="p-facture">Langage : HTML, CSS, JS</p>
+                        <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
+                        <a href="https://github.com/jimistay/facture"><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                    <div class="projet-zoo projet-view projet-hover">
+                        <p class="p-facture-title">Gestion d'un Zoo</p>
+                        <p class="p-facture">Langage : PHP (PDO procédural)</p>
+                        <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
+                        <a href="https://github.com/jimistay/gestion_zoo"><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                    <div class="projet-vva projet-view projet-hover">
+                        <p class="p-facture-title">Site internet de gestion des locations</p>
+                        <p class="p-facture">Langage: Laravel</p>
+                        <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
+                        <a href="https://github.com/jimistay/gestion_locations_vva"><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                    <div class="projet-bibliotheque projet-view projet-hover">
+                        <p class="p-facture-title">Application buréautique de gestion des livres dans une bibliothèque</p>
+                        <p class="p-facture">Langage : C#</p>
+                        <p class="p-facture">Réalisé à partir d'un cahier des charges personnel</p>
+                        <a href="https://github.com/jimistay/gestion_bibliotheque"><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                    <div class="projet-dvd projet-view projet-hover">
+                        <p class="p-facture-title">Projet de groupe : Gestion DVD'S</p>
+                        <p class="p-facture">Langage : C#</p>
+                        <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
+                        <a href="https://github.com/jimistay/gestion_dvd_groupe"><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                    <div class="projet-portfolio projet-view projet-hover">
+                        <p class="p-facture-title">Portfolio</p>
+                        <p class="p-facture">Langage : HTML, CSS, JS</p>
+                        <a href=""><img src="img/logo-github.png" class="logo-github-lien"></a>
+                    </div>
+                </div>
+            </div>
+            <!--PAGE 5-->
+            <div class="certificat" id="certificatContent">
+                <div class="all-certifs">
+                    <p class="title certificat-p-title">Mes certifications :</p>
+                    <div class="cerficat-rgpd projet-view">
+                        <p class="p-description p-facture">Lors de notre formation, nous avons passé la certification RGPD (CNIL).</p>
+                        <p class="p-description p-facture">Cette formation m'a permis d'en apprendre davantage sur l'importance de protéger les données des utilisateurs, ainsi que les règles permettant de les protéger.</p>
+                    </div>   
+                </div>
+            </div>
+            <!--PAGE 6-->
+            <div class="veille" id="veilleContent">
+                <div class="veille-all">
+                    <!--
+                        https://symfony.com/releases
+                        https://www.simform.com/blog/laravel-vs-symfony/
+                        https://www.drupal.org/association/supporters/blog/why-we-use-symfony
+                    -->
+                    <p class="title title-veille-techno">La veille technologique :</p>
+                    <p><i>EN COURS...</i></p>
+                    <div>
+                        <p class="p-description"><i>Le sujet :</i> L'inflluence des changements par Symfony</p>
+                        <p class="p-description">Quelle est l'évolution de langage de programmation tel que Symfony, et sa force en termes d'influence.</p>
+                    </div>
+                    <div>
+                        <p class="p-description">Mise en place de la veille technologique :</p>
+                        <p class="p-description">Inscription à la NewsLetter Google Alert et Symfony</p>
+                        <img class="img-veille1" src="img/veille-techno-chemin-removebg-preview.png">
+                    </div>
+                    <div>
+                        <p class="p-description">Symfony publie des versions majeures tous les <strong>deux ans</strong> et des versions mineures tous les 6 mois</p>
+                        <img class="img-veille" src="veille/veille.png" alt="">
+                    </div>
+                    <div>
+                        <p class="p-description">L'influence de Symfony sur Laravel :</p>
+                        <p class="p-description">Laravel utilise des composants de Symfony pour améliorer ses fonctionnalités. Par exemple, Eloquent, le système de gestion de base de données de Laravel, est inspiré des composants Doctrine de Symfony 1.</p>
+                        <!--Symfony a donc indirectement influencé la manière dont Laravel gère les requêtes SQL et les relations entre les tables.-->
+                        <p class="p-description">https://www.simform.com/blog/laravel-vs-symfony/</p>
+                    </div>
+                    <div>
+                        <p class="p-description">L'influence de Symfony sur les CMS</p>
+                        <p class="p-description">Drupal 8 a introduit l’utilisation de composants Symfony dans son noyau. Et Symfony a apporté des standards de codage et des meilleures pratiques à Drupal.</p>
+                        <p class="p-description">La nouvelle version de Drupal 10 (décembre 2022) utilise Symfony 6.2</p>
+                        <!--
+                        <p class="p-description">https://www.drupal.org/project/symfony_mailer</p>
+                        -->
+                        <p class="p-description">https://evolvingweb.com/blog/hands-drupal-10-symfony-62-new-tech-stack</p>
+                    </div>
+                </div>
+            </div>
+            <!--PAGE 7-->
+            <div class="poursuite-all" id="poursuiteContent">
+                <div class="poursuite">
+                    <p class="poursuite-p">Dans le cadre ma poursuite d'études, je souhaite poursuivre une formation sous <i>licence MIAGE.</i> </p>
+                <div class="poursuite-cv-lettre">
+                    <div class="poursuite-cv">
+                        <p class="poursuite-p-descrip">Voici mon CV:</p>
+                        <canvas class="pdf-canvas" ></canvas>
+                        <div class="img-poursuite">
+                            <a href="CV_lettre/Jasmine_AVAKOVA_CV.pdf" target="_blank">
+                                <img class="img-poursuite-voi" src="img/eye.svg">
+                            </a>
+                            <a><img class="img-poursuite-tele" src="img/download_black.svg"></a>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="poursuite-lettre">
+                        <p class="poursuite-p-descrip">Voici ma lettre de motivation:</p>
+                        <canvas class="pdf-canvas" ></canvas>
+                        <div class="img-poursuite" >
+                            <a href="CV_lettre/lettre.pdf" target="_blank">
+                                <img class="img-poursuite-voi" src="img/eye.svg">
+                            </a>
+                            <a><img class="img-poursuite-tele" src="img/download_black.svg"></a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+</body>
+</html>
+

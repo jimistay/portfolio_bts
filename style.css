@@ -1,0 +1,937 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.hidden {
+    display: none;
+}
+button{
+    background-color: black;
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+}
+button:hover{
+    background-color: rgb(170, 53, 186);
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+}
+.block-mission{
+    display: flex;
+    width: 100%;
+}
+/*MENU A GAUCHE*/
+.nav-left{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(35, 32, 36);
+}
+.nav-left-ul{
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-left-li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+.nav-left-a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.607);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/*TOUTE LA PAGE DROITE*/
+.page-main{
+    width: 100%;
+    height: 100%; /*100vh 729px*/
+    background-color: rgba(240, 237, 241, 0.971);
+}
+/*PREMIERE PAGE*/
+.profil-informations{
+    width: 90%;
+    margin: 0 auto;
+}
+.profil-name{
+    text-transform: uppercase;
+    font-size: 60px;
+    color:  rgb(170, 53, 186);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 45px;
+    text-align: center;
+    padding-top: 45px;
+}
+.profil-presentation{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #5c5858;
+    text-align: center;
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+.logo-img-link{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.logo-img-git{
+    width: 100px;
+    height: auto;
+}
+.profil-remerciments{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: end;
+}
+.profil-remerciments-p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #5c5858;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.detail-informations{
+    display: flex;
+    flex-direction: column;
+}
+.detail-informations-p{
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #5c5858;
+}
+.profil-informa-liens{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #aba2a2;
+    text-align: center;
+}
+/*PAGE 2 */
+.parcours-info{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.parcours-img{
+    width: 320px;
+}
+.parcours-info-titre{
+    margin-top: 40px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+/*PAGE 3*/
+.experience{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-all{
+    width: 90%;
+    margin: 0 auto;
+}
+.experience-p-title{
+    margin-top: 80px;
+    text-align: center;
+}
+.experience-first-block{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.supplay{
+    width: 60px;
+}
+.first-stage-chiffre1{
+    width: 200px;
+}
+.first-stage-chiffre2{
+    width: 200px;
+}
+.second-stage-chiffre1{
+    width: 200px;
+}
+.second-stage-chiffre2{
+    width: 200px;
+}
+.experience-p{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5c5858;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.img-first-stage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.img-ticket{
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+.img-retour-vue{
+    width: 100px;
+    height: auto;
+}
+.img-get-post{
+    width: 100px;
+    height: auto;
+}
+.img-get-code{
+    width: 100px;
+    height: auto;
+}
+.img-vue-get{
+    width: 100px;
+    height: auto;
+}
+.img-postman{
+    width: 100px;
+    height: auto;
+}
+.img-test-uni-ex{
+    width: 100px;
+    height: auto;
+}
+.img-test-realised{
+    width: 100px;
+    height: auto;
+}
+.experience-p-supplay{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #aba2a2;
+}
+.second-stage-exp{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.retrokube-img{
+    width: 60px;
+}
+.experience-second-block{
+    text-align: center;
+}
+.maquette-all{
+    width: 100px;
+    height: auto;
+}
+.ex-css{
+    width: 100px;
+    height: auto;
+}
+.routes{
+    width: 300px;
+    height: auto;
+}
+.controller{
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.ex-controller{
+    width: 100px;
+    height: auto;
+}
+.migrate{
+    width: 200px;
+    height: auto;
+}
+.table-update{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+.model{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+.trad1{
+    width: 100px;
+    height: auto;
+}
+.trad2{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+.trad3{
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+.trad4{
+    width: 100px;
+    height: auto;
+}
+.experience-p-title-a{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(170, 53, 186);
+    margin-bottom: 10px;
+}
+/* PAGE 4*/
+.projet{
+    width: 90%;
+    margin: 0 auto;
+}
+.projet-p-title{
+    margin-top: 80px;
+}
+.projet-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-github-lien{
+    width: 100px;
+    /*display: none;*/
+}
+.logo-github-lien:hover{
+    display: block;
+    width: 100px;
+}
+.projet-facture{
+    background-image: url(projets/facture.png);
+}
+.p-facture-title{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;/*#5c5858*/
+    text-align: center;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transition: background-color 0.5s ease; 
+}
+.p-facture{
+    display: block;
+}
+.p-facture{
+    display: none;
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5c5858;
+    text-align: center;
+    margin-top: 10px;
+}
+.projet-zoo{
+    background-image: url(projets/zoo.png);
+}
+.projet-portfolio{
+    background-image: url(projets/portfolio.png);
+}
+.projet-bibliotheque{
+    background-image: url(projets/bibliotheque.png);
+}
+.projet-vva{
+    background-image: url(projets/);
+}
+.projet-view{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-color: black;
+    transition: background-color 0.5s ease;
+}
+.projet-view:hover{
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+}
+.projet-dvd{
+    background-image: url(projets/dvd.png);
+}
+.projet-vva {
+    background-image: url(projets/vva.png);
+}
+.projet-view .p-facture,
+.projet-view .logo-github-lien {
+    display: none;
+}
+.projet-view:hover .p-facture,
+.projet-view:hover .logo-github-lien{
+    display: flex;
+}
+/*PAGE 5*/
+.certificat{
+    width: 90%;
+    margin: 0 auto;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 44px;
+    color: rgb(170, 53, 186);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.certificat-p-title{
+    font-size:  32px;
+    margin-top: 40px;
+}
+.p-description{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5c5858;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.cerficat-rgpd{
+    background-image: url(certificats/cnil.png);
+}
+/* PAGE 7*/
+.poursuite{
+    width: 90%;
+    margin: 0 auto;
+    height: 430px;   
+}
+.poursuite-cv-lettre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.poursuite-cv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdf-canvas{
+    width: 100px;
+    height: auto;
+}
+.poursuite-lettre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-poursuite-voi{
+    width: 16px;
+}
+.img-poursuite-tele{
+    width: 20px;
+}
+.poursuite-p{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 15px;
+    color: #5c5858;
+}
+.poursuite-p-descrip{
+    font-size: 19px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #5c5858;
+    text-align: center;
+}
+.veille{
+    width: 100%;
+}
+.veille-all{
+    width: 90%;
+    margin: 0 auto;
+}
+.title-veille-techno{
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.img-veille{
+    width: 300px;
+    margin: 0 auto;
+}
+.img-veille1{
+    width: 300px;
+    margin: 0 auto;
+}
+body::-webkit-scrollbar {
+  width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+  background:rgba(240, 237, 241, 0.971);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(35, 32, 36); 
+  border-radius: 20px; 
+  border: 3px solid rgba(240, 237, 241, 0.971);
+}
+
+@media (min-width: 600px) {
+    .nav-left-a.active {
+        color: rgb(170, 53, 186); 
+    }
+    .nav-left{
+        position: fixed;
+    }
+    .nav-left-ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .nav-left-li{
+        margin-left: 20px;
+    }
+    .page-main{
+        margin-top: 133px;
+    }
+    .profil-name{
+        padding-top: 125px;
+    }
+    .parcours-info-titre{
+        padding-top: 150px;
+    }
+    .experience-p-title{
+        padding-top: 100px;
+    }
+    .projet-p-title{
+        padding-top: 100px;
+    }
+    .projet-view{
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    .poursuite{
+        height: 600px;
+    }
+    .pdf-canvas{
+        width: 250px;
+    }
+    .img-poursuite-voi, .img-poursuite-tele{
+        width: 25px;
+    }
+    .parcours-img{
+        width: 400px;
+    }
+    .certificat{
+        display: flex;
+        justify-content: center;
+    }
+    .all-certifs{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .first-stage-chiffre1{
+        width: 300px;
+    }
+    .first-stage-chiffre2{
+        width: 300px;
+    }
+    .second-stage-chiffre1{
+        width: 300px;
+    }
+    .second-stage-chiffre2{
+        width: 300px;
+    }
+}
+@media (min-width: 1024px) {
+    
+    .projet-all{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 1280px) {
+    /*MENU A GAUCHE*/
+    .nav-left{
+        position: fixed;
+        flex-direction: column;
+        width: 20%;
+        height: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .nav-left-ul{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .nav-left-li{
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /*TOUTE LA PAGE DROITE*/
+    .all-page{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .page-main{
+        margin-top: 0;
+        width: 80%;
+        height: 100vh; /*100vh 729px*/
+        background-color: rgba(240, 237, 241, 0.971);
+    }
+    /*PREMIERE PAGE*/
+    .profil-informations{
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profil-name{
+        font-size: 60px;
+        margin-bottom: 45px;
+        padding-top: 0;
+        text-align: left;
+    }
+    .profil-presentation{
+        font-size: 19px;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #5c5858;
+        text-align: left;
+    }
+    .logo-img{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+    .logo-img-link{
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+    .logo-img-git{
+        width: 100px;
+        height: auto;
+    }
+    .profil-remerciments{
+        display: flex;
+        flex-direction: column;
+        margin-left: 85%;
+        margin-bottom: 20px;
+    }
+    .detail-informations{
+        display: flex;
+        flex-direction: column;
+        /*margin-left: 73%;*/
+    }
+    .profil-informa-liens{
+        text-align: left;
+    }
+    /*PAGE 2 */
+    .parcours{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(240, 237, 241, 0.971);
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .parcours-info{
+        height: auto;
+    }
+    .parcours-img{
+        width: 900px;
+    }
+    .parcours-info-titre{
+        margin-top: 5px;
+        padding-top: 0;
+    }
+    /*PAGE 3*/
+    .experience{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(240, 237, 241, 0.971);
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .experience-all{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .experience-p-title{
+        margin-top: 40px;
+        padding-top: 0;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .experience-first-block{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .supplay{
+        width: 90px;
+    }
+    .experience-p{
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .img-ticket{
+        width: 400px;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .img-retour-vue{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-get-post{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-get-code{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-vue-get{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-postman{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-test-uni-ex{
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .img-test-realised{
+        width: 400px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .experience-p-supplay{
+        text-align: left;
+    }
+    .projet-p-title{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px !important;
+        padding-top: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .projet{
+        width: 100%;
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .projet-all{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .projet-view{
+        width: 340px;
+        height: 280px;
+    }
+    .retrokube-img{
+        width: 90px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    /* PAGE 7*/
+    .poursuite{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(240, 237, 241, 0.971);
+    }
+    .poursuite-cv-lettre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .pdf-canvas{
+        width: 300px;
+        height: auto;
+        margin-right: 20px;
+    }
+    .img-poursuite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .img-poursuite-tele{
+        width: 20px;
+    }
+    .poursuite-p-descrip{
+        margin-top: 20px;
+    }
+    .certificat{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(240, 237, 241, 0.971);
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .all-certifs{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .certificat-p-title{
+        margin-bottom: 40px;
+    }
+    .img-poursuite-voi{
+        margin-right: 15px;
+    }
+    .first-stage-chiffre1{
+        width: 600px;
+        margin: 0 auto;
+    }
+    .first-stage-chiffre2{
+        width: 900px;
+        margin: 0 auto;
+    }
+    .second-stage-chiffre1{
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .second-stage-chiffre2{
+        width: 900px;
+    }
+    .exemple{
+        margin-top: 30px;
+    }
+    .last-p-experience{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .poursuite-all{
+        width: 100%;
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .veille{
+        border-top: 1px solid rgb(83, 82, 82);
+    }
+    .title-veille-techno{
+        font-size: 40px;
+    }
+    .img-veille1{
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .img-veille{
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+    }
+}
