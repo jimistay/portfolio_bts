@@ -14,6 +14,8 @@ button{
     text-transform: uppercase;
     width: 100px;
     height: 30px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 button:hover{
     background-color: rgb(170, 53, 186);
@@ -408,7 +410,7 @@ button:hover{
     margin-top: 20px;
     border-radius: 30px;
     border-color: black;
-    transition: background-color 0.5s ease;
+    transition: 0.5s;
 }
 .projet-view:hover{
     background-color: rgb(255, 255, 255);
@@ -649,6 +651,15 @@ body::-webkit-scrollbar-thumb {
         margin-left: 0;
         margin-top: 10px;
         margin-bottom: 10px;
+        padding-top : 10px;
+        padding-bottom: 10px;    
+    }
+    .nav-left-li:hover{
+        color: rgb(170, 53, 186);
+    }
+    .nav-left-li:hover a{
+
+        color: rgb(170, 53, 186);
     }
     /*TOUTE LA PAGE DROITE*/
     .all-page{
@@ -900,12 +911,12 @@ body::-webkit-scrollbar-thumb {
         margin: 0 auto;
     }
     .second-stage-chiffre1{
-        width: 400px;
+        width: 530px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
     .second-stage-chiffre2{
-        width: 900px;
+        width: 530px;
     }
     .exemple{
         margin-top: 30px;
@@ -934,4 +945,5 @@ body::-webkit-scrollbar-thumb {
         margin: 0 auto;
         display: flex;
     }
+    
 }

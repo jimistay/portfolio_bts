@@ -10,6 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Jasmine Avakova Portfolio</title>
+    <!--L'animation des images-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"
+      integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcyelIx+NDyNHFmtqvuIgOFQnI34WA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
+      integrity="sha512-Oi2rb7RCg9JJzHCNFHsZgzlreLA/C4mNWCDMGHwhzVtPrQJey0zKnc9t8gwO5uzPJQNc9rC3zJksZb4/rKY+9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <div class="all-page">
@@ -22,7 +36,7 @@
                 <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('projet')">Projets</a></li>
                 <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('certificat')">Certifications</a></li>
                 <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('veille')">Veille technologique</a></li>
-                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('poursuite')">CV et lettre de motivation</a></li>
+                <li class="nav-left-li"><a href="#" class="nav-left-a" onclick="showContent('poursuite')">CV</a></li>
             </ul>
         </nav>
         <!--PAGE A DROITE-->
@@ -72,9 +86,9 @@
                     <div class="experience-second-block">
                         <p class="experience-p-supplay">Supplay est une entreprise spécialisée dans le <strong>service de recrutement</strong> intérim dans un grand nombre de secteurs d'activité : btp, industrie, tertiaire, cadre ou cadre commercial.</p>
                         <p class="experience-p-supplay">Elle compte <strong>184 agences</strong>  en France et l'objectif de l'équipe de developpement est d'automatiser les tâches.</p>
-                        <div>
-                            <img class="first-stage-chiffre1" src="img_stage1/chiffres1.png">
-                            <img class="first-stage-chiffre2" src="img_stage1/chiffre2.png">
+                        <div class="gallery">
+                            <a href="img_stage1/chiffres1.png"><img class="first-stage-chiffre1" src="img_stage1/chiffres1.png"></a>
+                            <a href="img_stage1/chiffre2.png"><img class="first-stage-chiffre2" src="img_stage1/chiffre2.png"></a>
                         </div>
                         <p class="experience-p">Durant ce stage, j'ai participé à la création d'API avec PHP Symfonie, en effectuant diverses missions.</p>
                     </div>
@@ -84,26 +98,33 @@
                             <p class="experience-p">Création des routes en : POST, GET, PUT DELETE et retour en JSON</p>
                             <button onclick="toggleImagesVisibility(this)">Détails</button>
                         </div>
-                        <img src="img_stage1/ticket-img.png" class="img-ticket hidden">
-                        <img src="img_stage1/get-post.png" class="img-get-post hidden">
-                        <img src="img_stage1/vue-get.png" class="img-vue-get hidden">
-                        <img src="img_stage1/retour-vue.png" class="img-retour-vue hidden">
-                        <img src="img_stage1/get-code.png" class="img-get-code hidden">                 
+                        <div class="gallery">
+                            <a href="img_stage1/ticket-img.png"><img src="img_stage1/ticket-img.png" class="img-ticket hidden"></a> 
+                            <a href="img_stage1/get-post.png"><img src="img_stage1/get-post.png" class="img-get-post hidden"></a>
+                            <a href="img_stage1/vue-get.png"> <img src="img_stage1/vue-get.png" class="img-vue-get hidden"></a>
+                            <a href="img_stage1/retour-vue.png"><img src="img_stage1/retour-vue.png" class="img-retour-vue hidden"></a>
+                            <a href="img_stage1/get-code.png"><img src="img_stage1/get-code.png" class="img-get-code hidden"> </a>
+                        </div>
+                                      
                     </div>
                     <div class="img-first-stage">
                         <div class="block-mission">
                             <p class="experience-p">Création de collection Postman</p>
                         <button onclick="toggleImagesVisibility(this)">Détails</button>
                         </div>
-                        <img src="img_stage1/postman.png" class="img-postman hidden">
+                        <div class="gallery">
+                            <a href="img_stage1/postman.png"><img src="img_stage1/postman.png" class="img-postman hidden"></a>
+                        </div>
                     </div>
                     <div class="img-first-stage">
                         <div class="block-mission">
                             <p class="experience-p">Réalisation des tests unitaires</p>
                             <button onclick="toggleImagesVisibility(this)">Détails</button>
                         </div>
-                        <img src="img_stage1/test-uni-ex.png" class="img-test-uni-ex hidden">
-                        <img src="img_stage1/test-realised.png" class="img-test-realised hidden"> 
+                        <div class="gallery">
+                            <a href="img_stage1/test-uni-ex.png"><img src="img_stage1/test-uni-ex.png" class="img-test-uni-ex hidden"></a>
+                            <a href="img_stage1/test-realised.png"><img src="img_stage1/test-realised.png" class="img-test-realised hidden"> </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,9 +142,9 @@
                 <div class="experience-second-block">
                     <p class="experience-p-supplay">Retrokube est une entreprise qui réalise du <strong>graphisme, des applications web, des applications mobiles, des expériences VR, des stratégie marketing</strong>.</p>
                     <p class="experience-p-supplay">L'entreprise est composée de <strong>4 personnes</strong>  (le fondateur, une graphiste UX UI, un développeur Full Stack et une développeuse Web).</p>
-                    <div>
-                        <img class="second-stage-chiffre1" src="img_stage2/chiffre2.png" alt="">
-                        <img class="second-stage-chiffre2" src="img_stage2/chiffre1.png" alt="">
+                    <div class="gallery">
+                        <a href="img_stage2/chiffre2.png"><img class="second-stage-chiffre1" src="img_stage2/chiffre2.png" alt=""></a>
+                        <a href="img_stage2/chiffre1.png"><img class="second-stage-chiffre2" src="img_stage2/chiffre1.png" alt=""></a>
                     </div>
                     <div>
                         <p class="experience-p exemple">Voici quelques exemples des missions:</p>
@@ -133,38 +154,48 @@
                                 <p class="experience-p">Développement des pages à partir d'une maquette (Adobe Xd).</p>
                                 <button onclick="toggleImagesVisibility(this)">Détails</button>
                             </div>
-                            <img src="img_stage2/maquette-all.png" class="maquette-all hidden">
+                            <div class="gallery">
+                                <a href="img_stage2/maquette-all.png"><img src="img_stage2/maquette-all.png" class="maquette-all hidden"></a>
+                            </div>
                         </div>
                         <div class="img-first-stage">
                             <div class="block-mission">
                                 <p class="experience-p">Stylisation en scss des pages de manière responsive (mobile, tablette, ordinateur : de 300px à 2736px).</p>
                                 <button onclick="toggleImagesVisibility(this)">Détails</button>
                             </div>
-                            <img src="img_stage2/ex-css.png" class="ex-css hidden">
+                            <div class="gallery">
+                                <a href="img_stage2/ex-css.png"><img src="img_stage2/ex-css.png" class="ex-css hidden"></a>
+                            </div>
                         </div>
                         <div class="img-first-stage">
                             <div class="block-mission">
                                 <p class="experience-p">Développement des routes pour le front et le Backoffice.</p>
                                 <button onclick="toggleImagesVisibility(this)">Détails</button>
                             </div>
-                            <img src="img_stage2/routes.png" class="routes hidden">
+                            <div class="gallery">
+                                <a href="img_stage2/routes.png"><img src="img_stage2/routes.png" class="routes hidden"></a>
+                            </div>
                         </div>
                         <div class="img-first-stage">
                             <div class="block-mission">
                                 <p class="experience-p">Développement des Controllers.</p>
                                 <button onclick="toggleImagesVisibility(this)">Détails</button>
                             </div>
-                            <img src="img_stage2/controller.png" class="controller hidden">
-                            <img src="img_stage2/ex-controller.png" class="ex-controller hidden">
+                            <div class="gallery">
+                                <a href="img_stage2/controller.png"><img src="img_stage2/controller.png" class="controller hidden"></a>
+                                <a href="img_stage2/ex-controller.png"><img src="img_stage2/ex-controller.png" class="ex-controller hidden"></a>
+                            </div>
                         </div>
                         <div class="img-first-stage">
                             <div class="block-mission">
                                 <p class="experience-p">Création des migrations pour adapter la base de données aux changements.</p>
                                 <button onclick="toggleImagesVisibility(this)">Détails</button>
                             </div>
-                            <img src="img_stage2/migrate.png" class="migrate hidden">
-                            <img src="img_stage2/table-update.png" class="table-update hidden">
-                            <img src="img_stage2/model.png" class="model hidden">
+                            <div class="gallery">
+                                <a href="img_stage2/migrate.png"><img src="img_stage2/migrate.png" class="migrate hidden"></a>
+                                <a href="img_stage2/table-update.png"><img src="img_stage2/table-update.png" class="table-update hidden"></a>
+                                <a href="img_stage2/model.png"><img src="img_stage2/model.png" class="model hidden"></a>
+                            </div>
                         </div>
                     </div>
                     <div class="img-first-stage">
@@ -172,10 +203,12 @@
                             <p class="experience-p">Intégration de la traduction pour un site internet en React à l'aide des variables JSON (i18n).</p>
                             <button onclick="toggleImagesVisibility(this)">Détails</button>
                         </div>
-                        <img src="img_stage2/trad1.png" class="trad1 hidden">
-                        <img src="img_stage2/trad4.png" class="trad4 hidden">
-                        <img src="img_stage2/trad2.png" class="trad2 hidden">
-                        <img src="img_stage2/trad3.png" class="trad3 hidden">
+                        <div class="gallery">
+                            <a href="img_stage2/trad1.png"><img src="img_stage2/trad1.png" class="trad1 hidden"></a>
+                            <a href="img_stage2/trad4.png"><img src="img_stage2/trad4.png" class="trad4 hidden"></a>
+                            <a href="img_stage2/trad2.png"><img src="img_stage2/trad2.png" class="trad2 hidden"></a>
+                            <a href="img_stage2/trad3.png"><img src="img_stage2/trad3.png" class="trad3 hidden"></a>
+                        </div>
                     </div>
                     <div>
                         <p class="experience-p last-p-experience">Création et stylisation des motifs en DRUPAL en scss.</p>
@@ -219,7 +252,7 @@
                     <div class="projet-portfolio projet-view projet-hover">
                         <p class="p-facture-title">Portfolio</p>
                         <p class="p-facture">Langage : HTML, CSS, JS</p>
-                        <a href=""><img src="img/logo-github.png" class="logo-github-lien"></a>
+                        <a href="https://github.com/jimistay/portfolio_bts"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
                 </div>
             </div>
@@ -307,6 +340,11 @@
         </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+<script>
+    let lightbox = new SimpleLightbox(".gallery a", {
+      /* options */
+    });
+  </script>
 </body>
 </html>
 
