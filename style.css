@@ -7,9 +7,48 @@
 .hidden {
     display: none;
 }
+p, h3{
+    font-family: "Bariol Regular";
+}
+a{
+    color: rgba(255, 255, 255, 0.608);
+}
+p{
+    font-size: 19px;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: rgb(92, 88, 88);
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 44px;
+    color: rgb(170, 53, 186);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.place{
+    color: #aba2a2;
+}
+.filiere{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 20px;
+}
 button{
     background-color: black;
-    color: white;
+    color: rgba(255, 255, 255, 0.608);
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     width: 100px;
@@ -19,7 +58,7 @@ button{
 }
 button:hover{
     background-color: rgb(170, 53, 186);
-    color: white;
+    color: rgba(255, 255, 255, 0.608);
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
     width: 100px;
@@ -87,7 +126,7 @@ button:hover{
 }
 .profil-presentation{
     font-size: 19px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bariol Regular";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -142,7 +181,7 @@ button:hover{
 }
 .profil-informa-liens{
     font-size: 19px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bariol Regular";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -162,7 +201,6 @@ button:hover{
 }
 .parcours-info-titre{
     margin-top: 40px;
-    margin-bottom: 45px;
     text-align: center;
 }
 /*PAGE 3*/
@@ -202,7 +240,7 @@ button:hover{
 }
 .experience-p{
     font-size: 19px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bariol Regular";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -254,7 +292,7 @@ button:hover{
 }
 .experience-p-supplay{
     font-size: 19px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bariol Regular";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -451,7 +489,7 @@ button:hover{
 }
 .p-description{
     font-size: 19px;
-    font-family: "Playfair Display", serif;
+    font-family: "Bariol Regular";
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -516,7 +554,7 @@ button:hover{
     font-weight: 500;
     font-style: normal;
     margin-bottom: 10px;
-    color: #5c5858;
+    color: rgb(171, 162, 162);
     text-align: center;
 }
 .veille{
@@ -690,7 +728,6 @@ body::-webkit-scrollbar-thumb {
     }
     .profil-presentation{
         font-size: 19px;
-        font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
@@ -747,6 +784,8 @@ body::-webkit-scrollbar-thumb {
     .parcours-info-titre{
         margin-top: 5px;
         padding-top: 0;
+        text-align: left;
+        width: 90%;
     }
     /*PAGE 3*/
     .experience{
@@ -826,11 +865,11 @@ body::-webkit-scrollbar-thumb {
     .projet-p-title{
         width: 90%;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
         font-size: 40px !important;
         padding-top: 0;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .projet{
         width: 100%;
@@ -849,6 +888,8 @@ body::-webkit-scrollbar-thumb {
     }
     .title{
         font-size: 40px;
+        text-decoration: underline;
+        text-align: left;
     }
     /* PAGE 7*/
     .poursuite{
@@ -897,26 +938,35 @@ body::-webkit-scrollbar-thumb {
         margin: 0 auto;
     }
     .certificat-p-title{
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        text-align: left;
+        margin-top: 10px;
+        width: 100%;
     }
     .img-poursuite-voi{
         margin-right: 15px;
     }
     .first-stage-chiffre1{
-        width: 600px;
+        width: 400px;
         margin: 0 auto;
     }
     .first-stage-chiffre2{
-        width: 900px;
+        width: 450px;
         margin: 0 auto;
     }
     .second-stage-chiffre1{
-        width: 530px;
+        width: 370px;
         margin: 0 auto;
         margin-bottom: 10px;
     }
     .second-stage-chiffre2{
-        width: 530px;
+        width: 425px;
+    }
+    .gallery{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     .exemple{
         margin-top: 30px;
@@ -936,14 +986,127 @@ body::-webkit-scrollbar-thumb {
         font-size: 40px;
     }
     .img-veille1{
-        width: 900px;
+        width: 500px;
         margin: 0 auto;
         display: flex;
     }
     .img-veille{
-        width: 900px;
+        width: 500px;
         margin: 0 auto;
         display: flex;
+        margin-top: 20px;
     }
-    
+
+    .parcours-line{
+        width: 100%;
+        padding: 50px 0;
+        margin: 50px auto;
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(240, 237, 241, 0.971);
+        border-radius: 10px;
+    }
+    .parcours-line::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: rgb(35, 32, 36);
+        z-index: 1;
+    }
+    .timeline-block-right {
+        float: right;
+    }
+    .timeline-block {
+        width: -webkit-calc(50% + 8px);
+        width: -moz-calc(50% + 8px);
+        width: calc(50% + 8px);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        clear: both;
+    }
+    .marker {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background: rgb(170, 53, 186);
+        margin-top: 10px;
+        z-index: 9999;
+    }
+    .timeline-content {
+        width: 95%;
+        padding: 0 15px;
+        color: #666;
+    }
+    .timeline-block-left {
+        float: left;
+        direction: rtl;
+    }
+    .certificat-img{
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .p-description{
+        text-align: left;
+    }
+    .mise-en-place-veille{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .news-letter-chemin, .first-chemin-symfony{
+        width: 45%;
+    }
+    .all-articles{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .title-veille-sous-cat{
+        width: 100%;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    .first-article, .second-article{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .third-article{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .Ibexa{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 1400px) {
+    .projet {
+        height: 100vh;
+    }
 }

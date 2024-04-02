@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card.css" />
     <title>Jasmine Avakova Portfolio</title>
     <!--L'animation des images-->
     <script
@@ -24,6 +25,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- GSAP SCRIPT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 <body>
     <div class="all-page">
@@ -43,7 +57,7 @@
         <div class="page-main">
             <!--PAGE 1-->
             <div class="profil-informations" id="profilContent">
-                <p class="profil-name">Jasmine Avakova</p>
+                <h1 class="profil-name">Jasmine Avakova</h1>
                 <p class="profil-presentation">Etudiante en deuxieme année de <strong>BTS¹ SIO²</strong>  option <strong>SLAM³</strong> au lycée Parc de Vilgénis à Massy.</p>
                 <p class="profil-presentation">Vous y trouverez l'intégralité de mon parcours scolaire. Ainsi que mes réalisations personnelles et académiques. Et mon expérience dans le domaine informatique.</p>
                 <p class="profil-informa-liens">Vous trouverez ci-joint des liens pour accéder à mon profil LinkdIn et à mon GitHub :</p>
@@ -63,15 +77,60 @@
             </div>
             <!--PAGE 2-->
             <div class="parcours" id="parcoursContent">
-                <p class="title parcours-info-titre">Parcours scolaire :</p>
-                <div class="parcours-info">
+              <h2 class="title parcours-info-titre">Parcours scolaire :</h2>
+             <!--   <div class="parcours-info">
+                  
                     <img class="parcours-img" src="img/parcours.png">
+      
+                 
+                </div> -->
+                <div class="parcours-line">
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2019</h3>
+                        <p class="filiere">BAC ES - Option Economie Approfondie</p>
+                        <p class="place">Lycée Marc Chagall</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-left">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2019-2020</h3>
+                        <p class="filiere">CPGE Lettres LSH-A/L</p>
+                        <p class="place">Lycée Jean Jaurès</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2020-2022</h3>
+                        <p class="filiere">Licence 3 LLCER</p>
+                        <p class="place">Université de Lille</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-left">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2022-2024</h3>
+                        <p class="filiere">BTS SIO option SLAM</p>
+                        <p class="place">Lycée Parc de Vilgénis</p>
+                      </div>
+                    </div>
+                    <div class="timeline-block timeline-block-right">
+                      <div class="marker"></div>
+                      <div class="timeline-content">
+                        <h3>2024-2025</h3>
+                        <p class="filiere">Licence 3 MIAGE</p>
+                        <p class="place">Université Paris-Saclay</p>
+                      </div>
+                    </div>
                 </div>
             </div>
             <!--PAGE 3-->
            <div class="experience" id="experienceContent">
             <div class="experience-all">
-                <p class="title experience-p-title">Mes experiences :</p>
+              <h2 class="title experience-p-title">Mes experiences :</h2>
                 <div class="experice-first">
                     <div class="experience-first-block">
                         <div class="experience-pre-stage-info-gauche">
@@ -90,7 +149,7 @@
                             <a href="img_stage1/chiffres1.png"><img class="first-stage-chiffre1" src="img_stage1/chiffres1.png"></a>
                             <a href="img_stage1/chiffre2.png"><img class="first-stage-chiffre2" src="img_stage1/chiffre2.png"></a>
                         </div>
-                        <p class="experience-p">Durant ce stage, j'ai participé à la création d'API avec PHP Symfony, en effectuant diverses missions.</p>
+                        <p class="experience-p">Durant ce stage, j'ai participé à la création d'API (Application programming interface) avec PHP Symfony, en effectuant diverses missions.</p>
                     </div>
                     <p class="experience-p">Voici quelques exemples:</p>
                     <div class="img-first-stage">
@@ -217,32 +276,207 @@
             </div>
             <!--PAGE 4-->
             <div class="projet" id="projetContent">
-                <p class="title projet-p-title">Projets :</p>
+              <h2 class="title projet-p-title">Projets :</h2>
                 <div class="projet-all">
+                    <div class="card">
+                      <h4>Facture</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/facture.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Facture</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                    <a href="https://github.com/jimistay/facture" target="_blank">
+                                      <img
+                                        src="img/logo-github.png"
+                                        alt=""
+                                        class="pp"
+                                      />
+                                    </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage : HTML, CSS, JS</h3>
+                                <p>Réalisé à partir d'un cahier des charges.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Gestion d'un Zoo</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/zoo.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Gestion d'un Zoo</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="https://github.com/jimistay/gestion_zoo" target="_blank">
+                                <img
+                                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage : PHP (PDO procédural)</h3>
+                                <p>
+                                  Réalisé à partir d'un cahier des charges.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Gestion des locations</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/vva.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Gestion des locations</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="https://github.com/jimistay/gestion_locations_vva" target="_blank">
+                                <img
+                                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage: Laravel</h3>
+                                <p>Réalisé à partir d'un cahier des charges.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Application de gestion des livres</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/bibliotheque.png');
+                          ">
+                          <!--
+                            <h2 class="h2-white">Application de gestion des livres</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="https://github.com/jimistay/gestion_bibliotheque" target="_blank">
+                                <img
+                                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage : C#</h3>
+                                <p>Réalisé à partir d'un cahier des charges personnel.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Gestion DVD'S</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/dvd.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Gestion DVD'S</h2>
+                          -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="https://github.com/jimistay/gestion_dvd_groupe" target="_blank">
+                                <img
+                                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage : C#</h3>
+                                <p>Réalisé à partir d'un cahier des charges personnel.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <h4>Portfolio</h4>
+                        <div class="card__inner">
+                          <div class="card__face card__face--front" style="background-image: url('projets/portfolio.png');
+                          ">
+                          <!--
+                            <h2 class="h2-black">Portfolio</h2>
+                            -->
+                          </div>
+                          <div class="card__face card__face--back">
+                            <div class="card__content">
+                              <div class="card__header">
+                                <a href="https://github.com/jimistay/portfolio_bts" target="_blank">
+                                <img
+                                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                  alt=""
+                                  class="pp"
+                                />
+                                </a>
+                              </div>
+                              <div class="card__body">
+                                <h3>Langage : HTML, CSS, JS</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+<!--
                     <div class="projet-facture projet-view">
                         <p class="p-facture-title">Facture</p>
                         <p class="p-facture">Langage : HTML, CSS, JS</p>
                         <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
                         <a href="https://github.com/jimistay/facture"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
+                 
+
                     <div class="projet-zoo projet-view projet-hover">
                         <p class="p-facture-title">Gestion d'un Zoo</p>
                         <p class="p-facture">Langage : PHP (PDO procédural)</p>
                         <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
                         <a href="https://github.com/jimistay/gestion_zoo"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
+                     
                     <div class="projet-vva projet-view projet-hover">
                         <p class="p-facture-title">Site internet de gestion des locations</p>
                         <p class="p-facture">Langage: Laravel</p>
                         <p class="p-facture">Réalisé à partir d'un cahier des charges</p>
                         <a href="https://github.com/jimistay/gestion_locations_vva"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
+                   
                     <div class="projet-bibliotheque projet-view projet-hover">
                         <p class="p-facture-title">Application buréautique de gestion des livres dans une bibliothèque</p>
                         <p class="p-facture">Langage : C#</p>
                         <p class="p-facture">Réalisé à partir d'un cahier des charges personnel</p>
                         <a href="https://github.com/jimistay/gestion_bibliotheque"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
+                 
                     <div class="projet-dvd projet-view projet-hover">
                         <p class="p-facture-title">Projet de groupe : Gestion DVD'S</p>
                         <p class="p-facture">Langage : C#</p>
@@ -254,16 +488,22 @@
                         <p class="p-facture">Langage : HTML, CSS, JS</p>
                         <a href="https://github.com/jimistay/portfolio_bts"><img src="img/logo-github.png" class="logo-github-lien"></a>
                     </div>
+                     --> 
                 </div>
             </div>
             <!--PAGE 5-->
             <div class="certificat" id="certificatContent">
                 <div class="all-certifs">
-                    <p class="title certificat-p-title">Mes certifications :</p>
+                  <h2 class="title certificat-p-title">Mes certifications :</h2>
+                  <!--
                     <div class="cerficat-rgpd projet-view">
                         <p class="p-description p-facture">Lors de notre formation, nous avons passé la certification RGPD (CNIL).</p>
                         <p class="p-description p-facture">Cette formation m'a permis d'en apprendre davantage sur l'importance de protéger les données des utilisateurs, ainsi que les règles permettant de les protéger.</p>
                     </div>   
+                    -->
+                    <p class="experience-p">Lors de notre formation, nous avons passé la <strong>certification RGPD</strong> (Règlement général sur la protection des données) délivrée par la <strong>CNIL</strong> (Commission nationale de l’informatique et des libertés).</p>
+                    <p class="experience-p">Cette formation m'a permis de mieux comprendre les problématiques liées à la protection des données et m'a permis d'acquérir des connaissances pratiques pour mettre en oeuvre des mesures de sécurité adaptées.</p>
+                    <img src="certificats/cnil.png" class="certificat-img">
                 </div>
             </div>
             <!--PAGE 6-->
@@ -275,41 +515,52 @@
                         https://www.drupal.org/association/supporters/blog/why-we-use-symfony
                     -->
                     <p class="title title-veille-techno">La veille technologique :</p>
-                    <p><i>EN COURS...</i></p>
                     <div>
-                        <p class="p-description"><i>Le sujet :</i> L'inflluence des changements par Symfony</p>
-                        <p class="p-description">Quelle est l'évolution de langage de programmation tel que Symfony, et sa force en termes d'influence.</p>
+                        <p class="p-description"><i>Le sujet :</i> <strong>L'inflluence des changements par Symfony.</strong></p>
+                        <p class="p-description"><i>Problématique :</i> Quelle est l'évolution du framework Symfony et son pouvoir d'influence?</p>
                     </div>
-                    <div>
+                    <div class="mise-en-place-veille">
+                      <div class="news-letter-chemin">
                         <p class="p-description">Mise en place de la veille technologique :</p>
                         <p class="p-description">Inscription à la NewsLetter Google Alert et Symfony</p>
                         <img class="img-veille1" src="img/veille-techno-chemin-removebg-preview.png">
-                    </div>
-                    <div>
-                        <p class="p-description">Symfony publie des versions majeures tous les <strong>deux ans</strong> et des versions mineures tous les 6 mois</p>
+                      </div>
+                      <div class="first-chemin-symfony">
+                         <p class="p-description">Symfony publie des versions majeures tous les <strong>deux ans</strong> et des versions mineures tous les 6 mois</p>
                         <img class="img-veille" src="veille/veille.png" alt="">
+                      </div>  
                     </div>
-                    <div>
-                        <p class="p-description">L'influence de Symfony sur Laravel :</p>
+                    <div class="all-articles">
+                      <h4 class="title-veille-sous-cat">Changements importants : 2022-2024</h4>
+                      <div class="first-article">
+                        <p class="p-description"><strong>L'influence de Symfony sur Laravel :</strong></p>
                         <p class="p-description">Laravel utilise des composants de Symfony pour améliorer ses fonctionnalités. Par exemple, Eloquent, le système de gestion de base de données de Laravel, est inspiré des composants Doctrine de Symfony 1.</p>
+                        <button><a href="https://www.simform.com/blog/laravel-vs-symfony/">Article</a></button>
                         <!--Symfony a donc indirectement influencé la manière dont Laravel gère les requêtes SQL et les relations entre les tables.-->
-                        <p class="p-description">https://www.simform.com/blog/laravel-vs-symfony/</p>
-                    </div>
-                    <div>
-                        <p class="p-description">L'influence de Symfony sur les CMS</p>
+                      </div>
+                      <div class="second-article">
+                        <p class="p-description"><strong>L'influence de Symfony sur les CMS</strong></p>
                         <p class="p-description">Drupal 8 a introduit l’utilisation de composants Symfony dans son noyau. Et Symfony a apporté des standards de codage et des meilleures pratiques à Drupal.</p>
                         <p class="p-description">La nouvelle version de Drupal 10 (décembre 2022) utilise Symfony 6.2</p>
+                        <button><a href="https://evolvingweb.com/blog/hands-drupal-10-symfony-62-new-tech-stack">Article</a></button>
                         <!--
                         <p class="p-description">https://www.drupal.org/project/symfony_mailer</p>
                         -->
-                        <p class="p-description">https://evolvingweb.com/blog/hands-drupal-10-symfony-62-new-tech-stack</p>
+                      </div>  
+                      <div class="third-article">
+                        <div class="Ibexa">
+                          <p class="p-description"><strong>L'influence sur Ibexa DXP v4.6 LTS</strong></p>
+                          <p class="p-description">Symfony a servi de fondation solide pour le développement d’Ibexa DXP v4.6 LTS, contribuant à sa réputation dans le domaine des plateformes d’expérience digitale.</p>
+                          <button><a href="https://goodtech.info/ibexa-dxp-4-6-lts/">Article</a></button>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
             <!--PAGE 7-->
             <div class="poursuite-all" id="poursuiteContent">
                 <div class="poursuite">
-                    <p class="poursuite-p">Dans le cadre ma poursuite d'études, je souhaite poursuivre une formation sous <i>licence MIAGE.</i> </p>
+                    <p class="poursuite-p">Dans le cadre ma formation <i>licence 3 MIAGE à l'Université Paris-Saclay</i> je recherche d'une alternance dans le domaine <strong>informatique</strong>. </p>
                 <div class="poursuite-cv-lettre">
                     <div class="poursuite-cv">
                         <p class="poursuite-p-descrip">Voici mon CV:</p>
@@ -345,6 +596,32 @@
       /* options */
     });
   </script>
+
+<script src="app.js"></script>
+<script>
+  gsap.from(".card", {
+    scrollTrigger: ".card",
+    y: 100,
+    opacity: 0.7,
+    stagger: 0.05,
+    duration: 2,
+    ease: "power4.out",
+    stagger: {
+      amount: 0.3,
+    },
+  });
+  
+  // gsap.from('.title', 1,{
+  //   scrollTrigger: {
+  //     pin: true,
+  //     makers : true,
+  //     trigger: '.title'
+  //   },
+  //   x: -100,
+  //   opacity: 0.5,
+  //   ease: "power4.out",
+  // })
+</script>
 </body>
 </html>
 
