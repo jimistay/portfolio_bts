@@ -577,6 +577,22 @@ button:hover{
     width: 300px;
     margin: 0 auto;
 }
+.certificat-img{
+    width: 100px;
+}
+.parcours-line{
+    width: 90%;
+    margin: 0 auto;
+}
+.parcours-line{
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 body::-webkit-scrollbar {
   width: 12px; 
 }
@@ -597,6 +613,7 @@ body::-webkit-scrollbar-thumb {
     }
     .nav-left{
         position: fixed;
+        z-index: 10000;
     }
     .nav-left-ul{
         display: flex;
@@ -986,12 +1003,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 40px;
     }
     .img-veille1{
-        width: 500px;
+        width: 450px;
         margin: 0 auto;
         display: flex;
     }
     .img-veille{
-        width: 500px;
+        width: 450px;
         margin: 0 auto;
         display: flex;
         margin-top: 20px;
