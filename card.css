@@ -89,7 +89,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom left, #6c0b46 10%, #e6e6e6 115%);
+  background-image: linear-gradient(to bottom left, #6c0b46 10%, #1b1b1b 115%);
   z-index: -1;
   border-radius: 0px 0px 50% 0px;
 }
