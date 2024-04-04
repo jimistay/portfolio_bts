@@ -26,10 +26,11 @@ h4{
     color: rgb(92, 88, 88);
     text-align: center;
 }
+
 h2{
     text-transform: uppercase;
     font-size: 44px;
-    color: rgb(170, 53, 186);
+    color: #6c0b46;/*#44012A*/
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -46,6 +47,11 @@ h2{
 h3{
     font-size: 20px;
 }
+.copyright{
+    font-size: 20px;
+    font-family: "Bariol Regular";
+    color: rgba(255, 255, 255, 0.607);
+}
 button{
     background-color: black;
     color: rgba(255, 255, 255, 0.608);
@@ -57,7 +63,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(170, 53, 186);
+    background-color: #6c0b46;
     color: rgba(255, 255, 255, 0.608);
     font-family: "Playfair Display", serif;
     text-transform: uppercase;
@@ -105,7 +111,7 @@ button:hover{
 .page-main{
     width: 100%;
     height: 100%; /*100vh 729px*/
-    background-color: rgba(240, 237, 241, 0.971);
+    background-color: #fdf9f4; /*rgba(240, 237, 241, 0.971)*/
 }
 /*PREMIERE PAGE*/
 .profil-informations{
@@ -115,7 +121,7 @@ button:hover{
 .profil-name{
     text-transform: uppercase;
     font-size: 60px;
-    color:  rgb(170, 53, 186);
+    color:  #6c0b46;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -369,7 +375,7 @@ button:hover{
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
-    color: rgb(170, 53, 186);
+    color: #6c0b46;
     margin-bottom: 10px;
 }
 /* PAGE 4*/
@@ -476,7 +482,7 @@ button:hover{
 .title{
     text-transform: uppercase;
     font-size: 44px;
-    color: rgb(170, 53, 186);
+    color: #6c0b46;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -592,24 +598,38 @@ button:hover{
     overflow: hidden;
     border-radius: 10px;
 }
-
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #6c0b46;
+    margin-bottom: -345px;
+}
+.footer-link{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 body::-webkit-scrollbar {
   width: 12px; 
 }
 
 body::-webkit-scrollbar-track {
-  background:rgba(240, 237, 241, 0.971);
+  background:#fdf9f4;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(35, 32, 36); 
   border-radius: 20px; 
-  border: 3px solid rgba(240, 237, 241, 0.971);
+  border: 3px solid #fdf9f4;
 }
 
 @media (min-width: 600px) {
     .nav-left-a.active {
-        color: rgb(170, 53, 186); 
+        color: #6c0b46; 
     }
     .nav-left{
         position: fixed;
@@ -710,11 +730,12 @@ body::-webkit-scrollbar-thumb {
         padding-bottom: 10px;    
     }
     .nav-left-li:hover{
-        color: rgb(170, 53, 186);
+        color: #6c0b46;
+        transition: 3s;
     }
     .nav-left-li:hover a{
-
-        color: rgb(170, 53, 186);
+        transition: 1s;
+        color: #6c0b46;
     }
     /*TOUTE LA PAGE DROITE*/
     .all-page{
@@ -726,7 +747,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 0;
         width: 80%;
         height: 100vh; /*100vh 729px*/
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
     }
     /*PREMIERE PAGE*/
     .profil-informations{
@@ -789,7 +810,7 @@ body::-webkit-scrollbar-thumb {
         height: 100vh;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
         border-top: 1px solid rgb(83, 82, 82);
     }
     .parcours-info{
@@ -810,7 +831,7 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
         border-top: 1px solid rgb(83, 82, 82);
     }
     .experience-all{
@@ -915,7 +936,7 @@ body::-webkit-scrollbar-thumb {
         height: 100vh;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
     }
     .poursuite-cv-lettre{
         display: flex;
@@ -947,7 +968,7 @@ body::-webkit-scrollbar-thumb {
         height: 100vh;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
         border-top: 1px solid rgb(83, 82, 82);
     }
     .all-certifs{
@@ -1020,7 +1041,7 @@ body::-webkit-scrollbar-thumb {
         margin: 50px auto;
         position: relative;
         overflow: hidden;
-        background-color: rgba(240, 237, 241, 0.971);
+        background-color: #fdf9f4;
         border-radius: 10px;
     }
     .parcours-line::before{
@@ -1056,7 +1077,7 @@ body::-webkit-scrollbar-thumb {
         height: 16px;
         border-radius: 50%;
         border: 2px solid white;
-        background: rgb(170, 53, 186);
+        background: #6c0b46;/*rgb(170, 53, 186)*/
         margin-top: 10px;
         z-index: 9999;
     }
@@ -1120,6 +1141,9 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .footer-link{
+        justify-content: space-evenly;
     }
 }
 @media (min-width: 1400px) {
