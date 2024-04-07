@@ -637,7 +637,7 @@ body::-webkit-scrollbar-thumb {
     }
     .nav-left{
         position: fixed;
-        z-index: 1030;
+        z-index: 1000;
     }
     .nav-left-ul{
         display: flex;
